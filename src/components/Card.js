@@ -7,7 +7,10 @@ class Card extends Component {
     return (
       // <section className="card">
         <div className={`card__item card__item--${this.props.name}`}>
+          <div className="card__image--container">
           <img className="card__image" src={this.props.urlImage} alt={`Imagen de ${this.props.name}`} />
+          </div>
+          
           
           <div className="card__name--container">
             <h2 className="card__name">{this.props.name}</h2>
