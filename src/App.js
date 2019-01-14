@@ -19,7 +19,10 @@ const pokemon = [
 class App extends Component {
   render() {
     return (
-      <CardsList pokemon={pokemon}/>
+      <div className="card-list__container">
+        <CardsList pokemon={pokemon}/>
+      </div>
+      
     );
   }
 }

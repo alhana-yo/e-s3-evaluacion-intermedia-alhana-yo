@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './Card.css';
 
 
 class Card extends Component {
@@ -15,7 +16,11 @@ class Card extends Component {
             {this.props.types.map((type, index) => {
               return (
                 <li className={`card__type--element card__type--element${index}`}>
-                  {type}
+                  <div className="type">
+                    {type}
+                  
+                  </div>
+                  
                 </li>
               );
 
